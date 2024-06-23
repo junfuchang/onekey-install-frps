@@ -1,9 +1,27 @@
 一键安装脚本
 ===========
-##这里感谢各位大神们开发的各种牛逼软件
+Frp-Server  安装平台：CentOS、Debian、Ubuntu
+------
 
-脚本是业余爱好，英文属于文盲，写的不好，欢迎您批评指正。
+### 安装
 
-安装平台：CentOS、Debian、Ubuntu。
+```Bash
+wget --no-check-certificate https://raw.githubusercontent.com/junfuchang/onekey-install-frps/master/frps/install-frps.sh -O ./install-frps.sh
+chmod 700 ./install-frps.sh
+./install-frps.sh install
+```
 
-如需帮助请看相关README文件
+### 卸载
+```Bash
+    ./install-frps.sh uninstall
+```
+
+### Update
+```Bash
+    ./install-frps.sh update
+```
+
+### 服务器管理
+```Bash
+    Usage: /etc/init.d/frps {start|stop|restart|status|config|version}
+```
